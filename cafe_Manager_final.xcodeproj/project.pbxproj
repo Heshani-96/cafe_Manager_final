@@ -13,7 +13,22 @@
 		541E9DF12648F69700D5106C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 541E9DEF2648F69700D5106C /* Main.storyboard */; };
 		541E9DF32648F69C00D5106C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 541E9DF22648F69C00D5106C /* Assets.xcassets */; };
 		541E9DF62648F69C00D5106C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 541E9DF42648F69C00D5106C /* LaunchScreen.storyboard */; };
+		541E9E012648F7C900D5106C /* signInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E9E002648F7C900D5106C /* signInViewController.swift */; };
+		541E9E052648F95D00D5106C /* launchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E9E042648F95D00D5106C /* launchViewController.swift */; };
+		541E9E082648F97E00D5106C /* forgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E9E072648F97E00D5106C /* forgotPasswordViewController.swift */; };
+		541E9E0B2648F9B000D5106C /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E9E0A2648F9B000D5106C /* signUpViewController.swift */; };
+		541E9E1426490FD800D5106C /* cafe_Manager_finalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E9E1326490FD800D5106C /* cafe_Manager_finalTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		541E9E1626490FD800D5106C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 541E9DDE2648F69600D5106C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 541E9DE52648F69600D5106C;
+			remoteInfo = cafe_Manager_final;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		541E9DE62648F69600D5106C /* cafe_Manager_final.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cafe_Manager_final.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +39,24 @@
 		541E9DF22648F69C00D5106C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		541E9DF52648F69C00D5106C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		541E9DF72648F69C00D5106C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		541E9E002648F7C900D5106C /* signInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signInViewController.swift; sourceTree = "<group>"; };
+		541E9E042648F95D00D5106C /* launchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = launchViewController.swift; sourceTree = "<group>"; };
+		541E9E072648F97E00D5106C /* forgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = forgotPasswordViewController.swift; sourceTree = "<group>"; };
+		541E9E0A2648F9B000D5106C /* signUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
+		541E9E1126490FD700D5106C /* cafe_Manager_finalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cafe_Manager_finalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		541E9E1326490FD800D5106C /* cafe_Manager_finalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cafe_Manager_finalTests.swift; sourceTree = "<group>"; };
+		541E9E1526490FD800D5106C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		541E9DE32648F69600D5106C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		541E9E0E26490FD700D5106C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				541E9DE82648F69600D5106C /* cafe_Manager_final */,
+				541E9E1226490FD800D5106C /* cafe_Manager_finalTests */,
 				541E9DE72648F69600D5106C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				541E9DE62648F69600D5106C /* cafe_Manager_final.app */,
+				541E9E1126490FD700D5106C /* cafe_Manager_finalTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +87,44 @@
 		541E9DE82648F69600D5106C /* cafe_Manager_final */ = {
 			isa = PBXGroup;
 			children = (
+				541E9DFF2648F79400D5106C /* Controllers */,
+				541E9DFE2648F78500D5106C /* views */,
 				541E9DE92648F69600D5106C /* AppDelegate.swift */,
 				541E9DEB2648F69700D5106C /* SceneDelegate.swift */,
 				541E9DED2648F69700D5106C /* ViewController.swift */,
-				541E9DEF2648F69700D5106C /* Main.storyboard */,
 				541E9DF22648F69C00D5106C /* Assets.xcassets */,
 				541E9DF42648F69C00D5106C /* LaunchScreen.storyboard */,
 				541E9DF72648F69C00D5106C /* Info.plist */,
 			);
 			path = cafe_Manager_final;
+			sourceTree = "<group>";
+		};
+		541E9DFE2648F78500D5106C /* views */ = {
+			isa = PBXGroup;
+			children = (
+				541E9DEF2648F69700D5106C /* Main.storyboard */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		541E9DFF2648F79400D5106C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				541E9E002648F7C900D5106C /* signInViewController.swift */,
+				541E9E042648F95D00D5106C /* launchViewController.swift */,
+				541E9E072648F97E00D5106C /* forgotPasswordViewController.swift */,
+				541E9E0A2648F9B000D5106C /* signUpViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		541E9E1226490FD800D5106C /* cafe_Manager_finalTests */ = {
+			isa = PBXGroup;
+			children = (
+				541E9E1326490FD800D5106C /* cafe_Manager_finalTests.swift */,
+				541E9E1526490FD800D5106C /* Info.plist */,
+			);
+			path = cafe_Manager_finalTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +147,24 @@
 			productReference = 541E9DE62648F69600D5106C /* cafe_Manager_final.app */;
 			productType = "com.apple.product-type.application";
 		};
+		541E9E1026490FD700D5106C /* cafe_Manager_finalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 541E9E1826490FD800D5106C /* Build configuration list for PBXNativeTarget "cafe_Manager_finalTests" */;
+			buildPhases = (
+				541E9E0D26490FD700D5106C /* Sources */,
+				541E9E0E26490FD700D5106C /* Frameworks */,
+				541E9E0F26490FD700D5106C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				541E9E1726490FD800D5106C /* PBXTargetDependency */,
+			);
+			name = cafe_Manager_finalTests;
+			productName = cafe_Manager_finalTests;
+			productReference = 541E9E1126490FD700D5106C /* cafe_Manager_finalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -98,6 +176,10 @@
 				TargetAttributes = {
 					541E9DE52648F69600D5106C = {
 						CreatedOnToolsVersion = 12.4;
+					};
+					541E9E1026490FD700D5106C = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 541E9DE52648F69600D5106C;
 					};
 				};
 			};
@@ -115,6 +197,7 @@
 			projectRoot = "";
 			targets = (
 				541E9DE52648F69600D5106C /* cafe_Manager_final */,
+				541E9E1026490FD700D5106C /* cafe_Manager_finalTests */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +213,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		541E9E0F26490FD700D5106C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -137,13 +227,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				541E9E0B2648F9B000D5106C /* signUpViewController.swift in Sources */,
+				541E9E012648F7C900D5106C /* signInViewController.swift in Sources */,
 				541E9DEE2648F69700D5106C /* ViewController.swift in Sources */,
+				541E9E082648F97E00D5106C /* forgotPasswordViewController.swift in Sources */,
+				541E9E052648F95D00D5106C /* launchViewController.swift in Sources */,
 				541E9DEA2648F69600D5106C /* AppDelegate.swift in Sources */,
 				541E9DEC2648F69700D5106C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		541E9E0D26490FD700D5106C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				541E9E1426490FD800D5106C /* cafe_Manager_finalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		541E9E1726490FD800D5106C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 541E9DE52648F69600D5106C /* cafe_Manager_final */;
+			targetProxy = 541E9E1626490FD800D5106C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		541E9DEF2648F69700D5106C /* Main.storyboard */ = {
@@ -319,6 +429,46 @@
 			};
 			name = Release;
 		};
+		541E9E1926490FD800D5106C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9GJ5PLZNLS;
+				INFOPLIST_FILE = cafe_Manager_finalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Hesh.cafe-Manager-finalTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cafe_Manager_final.app/cafe_Manager_final";
+			};
+			name = Debug;
+		};
+		541E9E1A26490FD800D5106C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9GJ5PLZNLS;
+				INFOPLIST_FILE = cafe_Manager_finalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Hesh.cafe-Manager-finalTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cafe_Manager_final.app/cafe_Manager_final";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -336,6 +486,15 @@
 			buildConfigurations = (
 				541E9DFB2648F69C00D5106C /* Debug */,
 				541E9DFC2648F69C00D5106C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		541E9E1826490FD800D5106C /* Build configuration list for PBXNativeTarget "cafe_Manager_finalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				541E9E1926490FD800D5106C /* Debug */,
+				541E9E1A26490FD800D5106C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
