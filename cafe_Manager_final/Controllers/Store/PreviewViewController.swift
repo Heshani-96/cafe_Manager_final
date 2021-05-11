@@ -127,8 +127,6 @@ extension PreviewViewController: UITableViewDelegate, UITableViewDataSource, Foo
     func onFoodItemStatusChanged(foodItem: FoodItem, status: Bool) {
         self.changeFoodStatus(foodItem: foodItem, status: status)
     }
-    
-   
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return filteredFood.count
     }

@@ -88,7 +88,7 @@ extension OrderViewController {
                     }
                     
                     self.filteredOrders.append(contentsOf: self.orders)
-                    self.onSegChanged(self. segmentControl)
+                    self.onSegChanged(self.segmentControl)
                     
                 } else {
                     Loaf("no order found", state: .error, sender: self).show()
