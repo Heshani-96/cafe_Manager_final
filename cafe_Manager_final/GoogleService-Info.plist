@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>210850262431-9lgu984pu4odvd1m8vq0cbvpcsfevsgj.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.210850262431-9lgu984pu4odvd1m8vq0cbvpcsfevsgj</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC5homdwtHMnDgKM2AWwVu9ufnZny-OOyY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>210850262431</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.Hesh.cafe-Manager-final</string>
+	<key>PROJECT_ID</key>
+	<string>cafenibm-final</string>
+	<key>STORAGE_BUCKET</key>
+	<string>cafenibm-final.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:210850262431:ios:7181634e678def5b3961aa</string>
+	<key>DATABASE_URL</key>
+	<string>https://cafenibm-final-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>
