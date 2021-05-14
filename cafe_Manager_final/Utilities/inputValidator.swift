@@ -31,6 +31,11 @@ class inputValidator {
         return mobilePred.evaluate(with: mobile)
     }
     
+//    static func isValidFoodName(foodName: String) -> Bool {
+//        let compRegEx = NSPredicate(format: "SELF MATCHES %@", nameRegEx)
+//        return compRegEx.evaluate(with: foodName)
+//    }
+    
     
     
 }

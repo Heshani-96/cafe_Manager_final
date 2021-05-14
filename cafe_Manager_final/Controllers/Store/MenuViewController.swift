@@ -41,6 +41,23 @@ class MenuViewController: UIViewController {
     
     
     @IBAction func onAddPressed(_ sender: UIButton) {
+        if let text = txtFoodName.text, text.isEmpty {
+            Loaf("Enter a food name", state: .error, sender: self).show()
+            return
+        }
+        if let text = txtDescription.text, text.isEmpty {
+            Loaf("Enter a Description", state: .error, sender: self).show()
+            return
+        }
+        if let text = txtPrice.text, text.isEmpty {
+            Loaf("Enter a price", state: .error, sender: self).show()
+            return
+        }
+        if let text = txtCategory.text, text.isEmpty {
+            Loaf("Enter a food category", state: .error, sender: self).show()
+            return
+        }
+        
         let foodItem = FoodItem(
             foodItemID: "",
             foodName: txtFoodName.text ?? "",
@@ -52,6 +69,12 @@ class MenuViewController: UIViewController {
             isActive: true)
         
         self.addFoodItem(foodItem: foodItem)
+        
+//        if !inputValidator.isValidFoodName(foodName: txtFoodName.text ?? "") {
+//            Loaf("Please enter a valid Food name", state: .error, sender: self).show()
+//            return
+//        }
+     
         
     }
     

@@ -16,28 +16,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered By NIBM Computing 19.2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c60-VP-DY4">
-                                <rect key="frame" x="108" y="836.5" width="198.5" height="15.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered By NIBM Computing 19.2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctj-0d-1oI">
+                                <rect key="frame" x="108" y="841.5" width="198.5" height="15.5"/>
                                 <fontDescription key="fontDescription" name="Optima-Italic" family="Optima" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cafe" translatesAutoresizingMaskIntoConstraints="NO" id="pr4-IA-Jgb">
-                                <rect key="frame" x="97" y="338" width="220" height="220"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cafe' Manager" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0v-Pi-R6e">
+                                <rect key="frame" x="77" y="532" width="260" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="220" id="IHu-bQ-eKn"/>
-                                    <constraint firstAttribute="height" constant="220" id="pTu-BN-lij"/>
+                                    <constraint firstAttribute="height" constant="50" id="IOD-zc-KRB"/>
+                                    <constraint firstAttribute="width" constant="260" id="QkS-eo-hbt"/>
                                 </constraints>
-                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="25"/>
+                                <color key="textColor" red="1" green="0.63975630660000005" blue="0.0050239949280000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cutlery" translatesAutoresizingMaskIntoConstraints="NO" id="5TZ-er-sAd">
+                                <rect key="frame" x="117" y="294" width="180" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="Pw1-tv-9zL"/>
+                                    <constraint firstAttribute="width" constant="180" id="RPz-4G-Y6o"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="c60-VP-DY4" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Rxv-bj-V8F"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="c60-VP-DY4" secondAttribute="bottom" constant="10" id="T64-vX-02g"/>
-                            <constraint firstItem="pr4-IA-Jgb" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="csy-XY-Anc"/>
-                            <constraint firstItem="pr4-IA-Jgb" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="edY-xV-xOq"/>
+                            <constraint firstItem="g0v-Pi-R6e" firstAttribute="top" secondItem="5TZ-er-sAd" secondAttribute="bottom" constant="58" id="06l-jx-4K7"/>
+                            <constraint firstItem="5TZ-er-sAd" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="GVB-rt-LLl"/>
+                            <constraint firstItem="ctj-0d-1oI" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Wbf-qV-ZNF"/>
+                            <constraint firstItem="g0v-Pi-R6e" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Wfp-EO-HM4"/>
+                            <constraint firstItem="5TZ-er-sAd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="250" id="YLl-Uf-KY0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ctj-0d-1oI" secondAttribute="bottom" constant="5" id="o8f-ZW-V72"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -47,7 +58,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="cafe" width="42.5" height="42.5"/>
+        <image name="cutlery" width="170" height="170"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

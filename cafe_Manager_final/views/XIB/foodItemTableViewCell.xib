@@ -27,34 +27,34 @@
                                     <constraint firstAttribute="height" constant="50" id="ZHL-9g-IBf"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="fhd-Xo-3bn">
-                                <rect key="frame" x="70" y="24" width="181" height="32"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fhd-Xo-3bn">
+                                <rect key="frame" x="70" y="17.5" width="171.5" height="45"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTA-xH-DPc">
-                                        <rect key="frame" x="0.0" y="0.0" width="60.5" height="14.5"/>
-                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="12"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="75.5" height="18"/>
+                                        <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86W-ku-GTL">
-                                        <rect key="frame" x="0.0" y="17.5" width="89" height="14.5"/>
-                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="12"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="0.0" y="28" width="104" height="17"/>
+                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="14"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Tct-DU-vMU">
-                                <rect key="frame" x="261" y="15" width="49" height="50.5"/>
+                                <rect key="frame" x="251.5" y="13" width="58.5" height="54"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discount" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mn5-gR-Ndr">
-                                        <rect key="frame" x="0.0" y="0.0" width="49" height="14.5"/>
-                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="12"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="58.5" height="18"/>
+                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Bo-RK-Dv3">
-                                        <rect key="frame" x="0.0" y="19.5" width="51" height="31"/>
+                                        <rect key="frame" x="0.0" y="23" width="60.5" height="31"/>
                                         <connections>
                                             <action selector="onFoodStatusChanged:" destination="KGk-i7-Jjw" eventType="valueChanged" id="Ydl-Mo-cF1"/>
                                         </connections>
@@ -62,7 +62,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                        <color key="backgroundColor" red="1" green="0.80241083570000005" blue="0.067490744399999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="fhd-Xo-3bn" firstAttribute="leading" secondItem="geA-2m-p5T" secondAttribute="trailing" constant="10" id="4nG-Vm-Df0"/>
                             <constraint firstItem="fhd-Xo-3bn" firstAttribute="centerY" secondItem="ROd-Av-rou" secondAttribute="centerY" id="8Cg-we-cPR"/>
@@ -93,8 +93,8 @@
         </tableViewCell>
     </objects>
     <resources>
-        <systemColor name="systemGray3Color">
-            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

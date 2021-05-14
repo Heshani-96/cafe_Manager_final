@@ -22,6 +22,7 @@ class AccountViewController: UIViewController {
     var filteredOrders: [Order] = []
     
     var orderTotal: Double = 0
+    let sessionManager = SessionManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +37,10 @@ class AccountViewController: UIViewController {
         fetchOrders()
     }
   
+    @IBAction func btnSignOut(_ sender: UIButton) {
+        sessionManager.clearUserLoggedState()
+        dismiss(animated: true, completion: nil)
+    }
 }
 
 extension AccountViewController {

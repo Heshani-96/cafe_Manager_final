@@ -19,25 +19,22 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KKD-V0-fdp">
                         <rect key="frame" x="0.0" y="10" width="320" height="60"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ga-8g-mEv">
-                                <rect key="frame" x="10" y="19.5" width="116.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Category name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ga-8g-mEv">
+                                <rect key="frame" x="94" y="18" width="133" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.93709534406661987" green="0.83434361219406128" blue="0.7169501781463623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="0Ga-8g-mEv" firstAttribute="centerY" secondItem="KKD-V0-fdp" secondAttribute="centerY" id="MTr-lw-92Q"/>
-                            <constraint firstItem="0Ga-8g-mEv" firstAttribute="leading" secondItem="KKD-V0-fdp" secondAttribute="leading" constant="10" id="PSd-7M-BsI"/>
-                        </constraints>
+                        <color key="backgroundColor" red="1" green="0.80241083570000005" blue="0.067490744399999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="KKD-V0-fdp" secondAttribute="bottom" constant="10" id="6p7-m5-K65"/>
-                    <constraint firstItem="KKD-V0-fdp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="9eE-uK-dJU"/>
-                    <constraint firstItem="KKD-V0-fdp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Slu-qh-lhD"/>
-                    <constraint firstAttribute="trailing" secondItem="KKD-V0-fdp" secondAttribute="trailing" id="ofz-zl-WyF"/>
+                    <constraint firstAttribute="trailing" secondItem="KKD-V0-fdp" secondAttribute="trailing" id="29I-Py-rkY"/>
+                    <constraint firstItem="KKD-V0-fdp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="2IZ-zx-KK9"/>
+                    <constraint firstAttribute="bottom" secondItem="KKD-V0-fdp" secondAttribute="bottom" constant="10" id="lAR-xm-AUF"/>
+                    <constraint firstItem="KKD-V0-fdp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="s9P-Q1-K3A"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
